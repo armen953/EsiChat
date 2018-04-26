@@ -233,11 +233,12 @@ public class Serveur {
             serverSendInfoToUser(user, banned + " n'est pas connecté", "red");
         }
         if (!permaBan) {
+            User banUser = bannedUser;
             new java.util.Timer().schedule(new java.util.TimerTask() {
                 @Override
                 public void run() {
-                    bannedUserByUser.get(user).remove(bannedUser);
-                    serverSendInfoToUser(user, "<b>"+ bannedUser + "</b> n'est plus bannie" , "green");
+                    bannedUserByUser.get(user).remove(banUser);
+                    serverSendInfoToUser(user, "<b>"+ banUser + "</b> n'est plus bannie" , "green");
                     System.out.println(bannedUserByUser);
                 }
             }, 60000);
