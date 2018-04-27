@@ -22,7 +22,7 @@
 
 En effectuant un clic droit sur le nom d'un utilisateur connecté dans la zone **(7)**, l'utilisateur a accès à un menu qui permet d’effectuer des actions. En cliquant sur l'une de ces actions la commande correspondant et directement entré dans le champ de saisie. Par exemple pour l'option 1 « *Envoyer un message privé* » va entrer dans le chat la commande **@Arnaud**. 
 
-![](https://raw.githubusercontent.com/armen953/EsiChat/master/ChatClient/src/assets/gitPopUp.PNG)
+![Menu utilisateur](https://raw.githubusercontent.com/armen953/EsiChat/master/ChatClient/src/assets/gitUserMenu.PNG)
 
 Pour les autres commandes on peut les faire de manière graphique en cliquant sur l'interface ou on peut directement les entrer dans le champ de saisie. La commande !help affiche les différents commandes disponibles.
 
