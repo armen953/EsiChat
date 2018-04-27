@@ -24,7 +24,7 @@ En effectuant un clic droit sur le nom d'un utilisateur connecté dans la zone *
 
 ![Menu utilisateur](https://raw.githubusercontent.com/armen953/EsiChat/master/ChatClient/src/assets/gitUserMenu.PNG)
 
-Pour les autres commandes on peut les faire de manière graphique en cliquant sur l'interface ou on peut directement les entrer dans le champ de saisie. La commande !help affiche les différents commandes disponibles.
+Pour les autres commandes on peut les faire de manière graphique en cliquant sur l'interface ou on peut directement les entrer dans le champ de saisie. La commande **!help** affiche les différents commandes disponibles.
 
 * **!ban [pseudo]:** permet de bannir l'utilisateur pendant 60 sec
 * **!bandef [pseudo]:** permet de bannir l'utilisateur définitivement
@@ -34,7 +34,7 @@ Pour les autres commandes on peut les faire de manière graphique en cliquant su
 
 Historique des 10 derniers messages : remonter les messages avec la flèche du haut
 
-Possibilité d'envoyer des Smiley : en cliquant sur l'interface graphique ou en entrant directement les symboles :) ;) :(
+Possibilité d'envoyer des Smiley : en cliquant sur l'interface graphique (zone **(4)** puis **(3)**) ou en entrant directement les symboles **:) ;) :(**
 
 ## Serveur
 
