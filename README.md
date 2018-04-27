@@ -18,6 +18,10 @@
 * **!bannedList:** permet d'avoir la liste des utilisateurs que vous avez bannie
 * **!help:** avoir des informations sur les commandes disponibles
 
+Historique des 10 derniers messages : remonter les messages avec la flèche du haut
+
+Possibilité d'envoyer des Smiley : en cliquant sur l'interface graphique ou en entrant directement les symboles :) ;) :(
+
 ## Serveur
 
 > ### Interface serveur
