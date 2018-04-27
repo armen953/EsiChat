@@ -70,7 +70,6 @@ public class Serveur {
             
             PrintStream write = new PrintStream(newClient.getOutputStream());  // recuperer le descripteur pour envoyer un message au client
             for(User user : this.users){
-                System.out.println("ENTRE");
                 if(user.getUserName().equals(pseudo)){
                     // le pseudo existe deja
                     write.println("Refuse|Le pseudo existe déjà");  // envoyer le message au client
@@ -237,9 +236,11 @@ public class Serveur {
             new java.util.Timer().schedule(new java.util.TimerTask() {
                 @Override
                 public void run() {
-                    bannedUserByUser.get(user).remove(banUser);
-                    serverSendInfoToUser(user, "<b>"+ banUser + "</b> n'est plus bannie" , "green");
-                    System.out.println(bannedUserByUser);
+                    if (bannedUserByUser.get(user).contains(banUser)) { // si la personne bannie est toujours dans la liste apres le timer alors le retirer sinon rien faire
+                        bannedUserByUser.get(user).remove(banUser);
+                        serverSendInfoToUser(user, "<b>"+ banUser + "</b> n'est plus bannie" , "green");
+                        System.out.println(bannedUserByUser);
+                    }
                 }
             }, 60000);
         }
